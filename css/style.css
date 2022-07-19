@@ -44,6 +44,7 @@ section{
 .menuitems {
     display: flex;
     text-align: left;
+    align-items: center;
 }
 .menuitems li a {
     display: inline-block;
@@ -135,10 +136,6 @@ section{
     border-radius: 50%;
 }
 /******** logo-section ***********/
-.logos{
-    display: grid;
-    grid-template-rows: repeat(1,1fr);
-}
 .logo-items{
     display: flex;
     justify-content: space-evenly;
@@ -163,7 +160,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 1.875rem;
-    column-gap: 1.875rem;
+    gap: 1.875rem;
     margin-bottom: 3.125rem;
 }
 .product-items{
@@ -360,4 +357,75 @@ footer{
 .footer-social li a:hover{
     color: #ff5200;
     background: blue;
+}
+/************** media quary css started *************/
+/* mobile device responsive */
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .hero-items{
+        flex-direction: column-reverse;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .hero-content p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    .hero-images {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.875rem;
+    }
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+    .hero-images img, .thumbnail img{
+        width: 100%;
+        height: auto;
+    }
+    .product-title {
+        font-size: 1rem;
+    }
+    .product {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product-items {
+        width: 100%;
+        text-align: center;
+    }
+    .product-details {
+        text-align: left;
+    }
+    .logo-items {
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+    .featurs {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-image, .feature-content{
+        width: 100%;
+    }
+    .feature-content h1 {
+        font-size: 1.75rem;
+        text-align: center;
+        white-space: inherit;
+    }
+    .feature-button {
+        margin-bottom: 1.875rem;
+    }
+    .feature-image img {
+        width: 100%;
+        height: auto;
+    }
 }
