@@ -1,0 +1,238 @@
+/********* google-fonts link *********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600&display=swap');
+/************ common css started ***************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,h6,a,span,strong{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+.container{
+    width: 100%;
+    max-width: 75rem;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+section{
+    padding: 3.125rem 0;
+}
+/********** header-area stylesheet ************/
+.menu-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.menuitems {
+    display: flex;
+    text-align: left;
+}
+.menuitems li a {
+    display: inline-block;
+    padding: 0 2.125rem;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color .5s ease-in-out;
+}
+.menuitems li a:hover{
+    color: #ff5200;
+}
+.menuitems li .search{
+    font-size: 1rem;
+    color: #000;
+}
+.menuitems li span{
+    display: inline-block;
+    color: #000000;
+    font-size: 1.813rem;
+}
+/************** hero-section stylesheet *****************/
+.hero-items{
+    display: flex;
+    align-items: center;
+}
+.hero-content h1{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #3A3A3A;
+}
+.hero-content p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 1.625rem;
+}
+.hero-button{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 0.625rem 1.5rem 0.625rem 1.5rem;
+    border-radius: 2.563rem;
+    display: inline-block;
+}
+.hero-button span{
+    display: inline-block;
+    font-size: 0.875rem;
+    margin-left: 0.75rem;
+}
+.hero-images{
+    width: 29.688rem;
+    height: 29.688rem;
+    border-radius: 50%;
+    border: 0.188rem solid #F1E4FF;
+    padding: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-images img{
+    width: 27.5rem;
+    height: 27.5rem;
+    border-radius: 50%;
+}
+/******** logo-section ***********/
+.logo-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    height: 0.063rem;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    margin-bottom: 2.625rem;
+    margin-top: 2.625rem;
+}
+/*********** product-section ***********/
+.product-title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+    color: #3A3A3A;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1.875rem;
+    column-gap: 1.875rem;
+    margin-bottom: 3.125rem;
+}
+.product-items{
+    width: 20.563rem;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 0 2.5rem 0 #00000026;
+    padding: 0.938rem;
+    border-radius: 0.313rem;
+
+}
+.thumbnail{
+    width: 18.75rem;
+    height: 16rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.thumbnail img{
+    width: 18.75rem;
+    height: 16rem;
+}
+.product-details h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 0.375rem;
+}
+.product-details h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000DE;
+    margin-bottom: 0.688rem;
+}
+.fa-star{
+    color: #FB8200;
+    font-size: 0.688rem;
+}
+.product-details span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.313rem;
+}
+.product-details p{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #787885;
+}
+.seemore-button{
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #E02C6DDE;
+}
+.seemore-button span{
+    margin-left: 0.75rem;
+    display: inline-block;
+    font-size: 0.875rem;
+}
+/************** feature-section ***************/
+.featurs{
+    display: flex;
+}
+.feature-image{
+    width: 50%;
+}
+.feature-image img{
+    width: 25.25rem;
+    height: 16.875rem;
+}
+.feature-content{
+    width: 50%;
+}
+.feature-content h1{
+    font-size: 2.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0A0826;
+    white-space: nowrap;
+}
+.feature-content p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 1.75rem;
+    margin-bottom: 1.625rem;
+}
+.feature-button{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #E02C6D;
+    padding: 0.625rem 1.5rem 0.625rem 1.5rem;
+    color: #fff;
+}
+.feature-button span{
+    margin-left: 0.75rem;
+    display: inline-block;
+    font-size: 0.875rem;
+}
