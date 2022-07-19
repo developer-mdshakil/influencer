@@ -236,3 +236,44 @@ hr{
     display: inline-block;
     font-size: 0.875rem;
 }
+/************** footer stylesheet *************/
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 5.563rem 0;
+    text-align: center;
+}
+.footer-items h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.188rem;
+}
+.footer-items p{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #D9DBE1;
+    margin-bottom: 0.188rem;
+}
+.footer-items span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #D9DBE1;
+    margin-bottom: 0.188rem;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.063rem;
+    background: #22213C;
+}
