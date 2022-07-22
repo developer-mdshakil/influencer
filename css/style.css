@@ -41,6 +41,9 @@ section{
     font-weight: 700;
     color: #3A3A3A;
 }
+.responsive-bar{
+    display: none;
+}
 .menuitems {
     display: flex;
     text-align: left;
@@ -65,6 +68,12 @@ section{
     display: inline-block;
     color: #000000;
     font-size: 1.813rem;
+}
+.shopping-cart{
+    display: inline-block;
+    font-size: 1rem;
+    color: #161616;
+    text-decoration: none;
 }
 /************** hero-section stylesheet *****************/
 .hero-items{

@@ -5,6 +5,28 @@
         width: 100%;
         overflow-x: hidden;
     }
+    .menu-bar {
+        width: 100%;
+    }
+    .menu-title {
+        position: relative;
+        left: 25%;
+        white-space: nowrap;
+    }
+    .menu-title {
+        font-size: 1rem;
+    }
+    .responsive-bar {
+        display: block;
+        position: relative;
+        right: 66%;
+        font-size: 1rem;
+    }
+    .menuitems {
+        flex-direction: column;
+        right: 67%;
+        display: none;
+    }
     .hero-items{
         flex-direction: column-reverse;
     }
@@ -70,7 +92,7 @@
     }
 }
 /* tablate device responsive */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 688px) and (max-width: 992px) {
     .container {
         width: 100%;
     }
